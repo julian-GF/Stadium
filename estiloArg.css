@@ -1,0 +1,1183 @@
+* {
+    Margin:0;
+    padding:0;
+ }
+
+/* todo header*/
+
+h1 {
+    color: white;
+    font-size: 800%;
+    font-family: 'Otomanopee One', sans-serif;
+    letter-spacing: 15px ;
+    grid-area: titulo;
+    padding-right: 1%;
+    display: flex;
+    justify-content:center;
+    justify-content: flex-end;
+    align-items: flex-end;}
+
+header {
+    margin: 2% 0  2% 0 ;
+    text-align: center;
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;  
+    display:grid;
+    grid-template-areas:
+    "titulo logo";
+
+    grid-template-columns: 60% 30%;
+        
+    }
+
+#logo{
+        border-radius: 20%;
+        border: 2px outset white;
+        margin: 0 0 0 1%;}
+
+#contenedorLogo{
+            grid-area: logo;
+            display: flex;
+            justify-content:center;
+            justify-content: flex-start;
+            align-items: flex-end; 
+        padding: 1% 0;   }
+    
+
+/*body*/
+
+body{
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav presentacion presentacion"
+    "nav monumental monumental"
+    "nav bombonera bombonera"
+    "nav santiago santiago"
+    "footer footer footer";
+
+    grid-template-columns: 9% 91% ;
+}
+
+header{
+    grid-area: header;
+}
+
+/* todo nav*/
+
+nav{
+    margin-top: 0%;
+    margin-left: 8%;
+    margin-right: 10%;
+    grid-area: nav;  
+
+}
+
+
+
+#contenedorNav{
+    display: flex;
+    flex-direction: column; 
+    position: sticky;
+    top: 0;
+
+}
+
+.botonesNav{
+    width: 90%;
+    height: 7vh;
+    font-size: 20px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.divFlechasNav{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 9vh;
+
+}
+
+#agradecimiento{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    border: 5px white;
+    border-style: dashed solid;
+    background-color: rgb(12, 113, 245);
+    animation-name: agradecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 3s;
+
+}
+
+@keyframes agradecer {
+    0% { color:rgb(157, 255, 0);
+    border: 5px rgb(157, 255, 0);
+    border-style: dashed solid;}
+
+    50% {color:yellow;
+        border: 5px yellow;
+        border-style: dashed solid;}
+
+    100% {color: white;}
+
+}
+
+#agradecimiento:hover{
+    color: yellow;
+    border: 5px yellow;
+    border-style: dashed solid
+}
+
+/* todo nav HASTA ACA*/
+
+
+section#presentacion{
+    grid-area: presentacion;
+    display: grid;
+    grid-template-areas: 
+    "estadiosArg banderaArg"
+    "listaEstadios banderaArg";
+    margin: 5%;
+    border: 3px solid gray;
+    grid-template-columns: 1fr  1fr;
+    background-color: rgb(65, 62, 62)  ;
+    margin-top: 3%;
+    margin-bottom: 2%;
+
+}
+
+section#monumental{
+    grid-area: monumental;
+    margin: 1%;
+    margin-right: 3%;
+    border: 4px solid gray;
+    border-radius: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%); 
+
+}
+
+section#monumental:hover{
+    border: 4px solid rgb(60, 175, 241);
+}
+
+/* fotos monumental*/
+
+#fotosMonu{
+    display: inline-block;
+    text-align: center;
+    margin: 1.5%;
+    
+}
+
+#fotoMon1{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    transition: 3s;
+
+}
+
+#fotoMon1:hover {
+    width: 35%;
+    height: 35%;
+}
+
+#fotoMon2{
+    width: 25.3%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    transition: 3s;
+}
+
+#fotoMon2:hover {
+    width: 35%;
+    height: 35%;
+}
+
+
+#fotoMon3{
+
+    width: 25.3%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    transition: 3s;
+    
+}
+
+#fotoMon3:hover {
+    width: 35%;
+    height: 35%;
+}
+
+
+
+/* hasta aca*/
+
+
+section#bombonera{
+    grid-area: bombonera;
+    margin: 1%;
+    margin-right: 3%;
+    border: 4px solid gray;
+    border-radius: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);     
+}
+
+section#bombonera:hover{
+border: 4px solid rgb(60, 175, 241);
+}
+/*fotos bomb*/
+
+#fotosBomb{
+    display: inline-block;
+    text-align: center;
+    margin: 1.5%;
+
+}
+
+#fotoBomb1{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    transition: 3s;
+
+}
+
+#fotoBomb1:hover{
+    width: 35%;
+    height: 35%;
+}
+
+#fotoBomb2{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    transition: 3s;
+    
+}
+
+#fotoBomb2:hover{
+    width: 35%;
+    height: 35%;
+}
+
+#fotoBomb3{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    transition: 3s;
+    
+}
+
+#fotoBomb3:hover{
+    width: 35%;
+    height: 35%;
+}
+
+/*hasta aca*/
+
+
+
+section#santiago{
+    grid-area: santiago;
+    margin: 1%;
+    margin-right: 3%;
+    border: 4px solid gray;
+    border-radius: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+section#santiago:hover{
+    border: 4px solid rgb(60, 175, 241);
+    }
+
+/*fotos santiago*/
+
+#fotosSan{
+    display: inline-block;
+    text-align: center;
+    margin: 1.5%;
+   
+}
+
+#fotoSan1{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    transition: 3s;
+
+}
+
+#fotoSan1:hover{
+    width: 35%;
+    height: 35%;
+}
+
+
+#fotoSan2{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    transition: 3s;
+}
+
+#fotoSan2:hover{
+    width: 35%;
+    height: 35%;
+}
+
+#fotoSan3{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    transition: 3s;
+    
+}
+
+#fotoSan3:hover{
+    width: 35%;
+    height: 35%;
+}
+
+
+/*hasta aca*/
+
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: gray;
+}
+
+/* hasta aca grid body*/
+
+/*nombres areas PRESENTACION*/
+
+div#banderaArg{
+    grid-area: banderaArg;
+}
+
+div#estadiosArg{
+    grid-area: estadiosArg;
+    font-family: 'Anton', sans-serif;
+    font-size: 98px;
+    letter-spacing: 15px;
+    text-align: center;
+    color: white;
+    animation-name: sub;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes sub {
+    0% {  color: white}
+    50% { color:  rgb(36, 164, 238);}
+}
+
+div#listaEstadios{
+    grid-area: listaEstadios;
+    text-align: center ;
+    border-top: 3px solid gray;
+}
+
+div#listaEstadios ul li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    margin: 5% 2% 1% 2%;
+    color: white;
+    
+
+    
+}
+
+div#listaEstadios ul li:hover {
+    background-color: rgb(11, 147, 226);
+}
+
+/* hast aca*/
+
+
+#banderaArg{
+    background-image: url(arg.jpg);
+    background-position: center;
+
+}
+
+.subtitulosEstadios{
+    font-family: 'Anton', sans-serif;
+    font-size: 65px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-style: inherit;
+    text-transform: uppercase;
+    color: rgb(60, 175, 241);
+    margin-top: 2%;
+    margin-bottom: 1%;
+
+}
+
+.parrafosEstadios{
+    font-family: 'Prompt', sans-serif;
+    margin: 0.5% 0.5% 0.1% 1%;
+    font-size: 25px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* para tabelt media queries*/
+
+
+
+@media only screen and (max-width:1400px ) 
+{
+    h1{
+    font-size: 100px;
+    letter-spacing: 5px ;}
+
+    #logo{
+        width: 200px;
+        height: 140px;
+    }
+
+    header {
+        grid-template-columns: 70% 20%;
+    }
+
+    body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "presentacion presentacion presentacion"
+    "monumental monumental monumental"
+    "bombonera bombonera bombonera"
+    "santiago santiago santiago"
+    "footer footer footer";
+
+    grid-template-columns: 100% ;
+    }
+
+
+/* todo nav*/
+
+nav{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 0;
+    padding-bottom: 2%;
+    position:sticky;
+    top: 0;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+
+#contenedorNav{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-end;
+    justify-content: space-around;
+ 
+}
+
+.botonesNav{
+    width: 15vh;
+    height: 5vh;
+    font-size: 25px;
+    margin-top: 10%;
+}
+
+.divFlechasNav{
+    display: none;
+
+}
+
+#agradecimiento{
+ display: none;}
+
+/* todo nav HASTA ACA*/
+
+
+/*seccion presentacion*/
+
+section#presentacion{
+    display: grid;
+    grid-template-areas: 
+    "estadiosArg estadiosArg  "
+    "listaEstadios banderaArg";
+    margin: 5%;
+    border: 3px solid gray;
+    grid-template-columns: 1fr  1fr;
+    background-color: rgb(65, 62, 62)  ;
+    margin-top: 9%;
+    margin-bottom: 2%;
+
+}
+
+
+
+div#estadiosArg{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 90px;
+    letter-spacing: 15px;
+    text-align:center;
+}
+
+div#listaEstadios{
+    grid-area: listaEstadios;
+    text-align:center ;
+    border-top: 3px solid gray;
+
+}
+
+div#listaEstadios ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+div#listaEstadios ul li{
+    list-style: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-top: 10%;
+    margin-right: 20%;
+}
+
+#banderaArg{
+        background-image: url(http://i2.wp.com/www.diariocafayate.com/wp-content/uploads/2018/06/bandera-argentina.jpg?fit=476%2C297);
+
+        background-position:center;
+        border-top:3px solid gray ;
+        border-left: 3px solid gray ;
+        background-repeat: no-repeat;
+}
+
+/*seccion presentacion hasta aca*/
+
+
+/*titulos y sub */
+.subtitulosEstadios{
+    font-family: 'Anton', sans-serif;
+    font-size: 90px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-style: inherit;
+    text-transform: uppercase;
+    color: rgb(60, 175, 241);
+
+    margin-top: 2%;
+    margin-bottom: 1%;
+
+
+}
+
+.parrafosEstadios{
+    font-family: 'Prompt', sans-serif;
+    margin: 0.5% 1% 0.1% 2%;
+    font-size: 30px;
+    color: white;
+}
+
+/*titulos y sub hasta aca*/
+
+
+/* monumental*/
+section#monumental{
+    grid-area: monumental;
+    margin: 3%;
+    border-radius: 2%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+
+}
+
+section#monumental:hover{
+    border: 4px solid rgb(60, 175, 241);
+}
+
+
+
+#fotosMonu{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin: 3%;
+    
+}
+
+#fotoMon1{
+    width: 80%;
+    height: 80%;
+
+
+}
+
+#fotoMon1:hover {
+    width: 100%;
+    height: 100%;
+}
+
+#fotoMon2{
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+}
+
+#fotoMon2:hover {
+    width: 100%;
+    height: 100%;
+}
+
+
+#fotoMon3{
+
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    
+}
+
+#fotoMon3:hover {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* monumental hasta aca*/
+
+
+
+/* BOMBONERA*/
+
+section#bombonera{
+    margin: 3%;
+    margin-top: 7%;
+    margin-bottom: 7%;  
+}
+
+
+#fotosBomb{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin: 3%;
+
+}
+
+#fotoBomb1{
+    width: 80%;
+    height: 80%;
+
+}
+
+#fotoBomb1:hover{
+    width: 100%;
+    height: 100%;
+}
+
+#fotoBomb2{
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    
+}
+
+#fotoBomb2:hover{
+    width: 100%;
+    height: 100%;
+}
+
+#fotoBomb3{
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    
+}
+
+#fotoBomb3:hover{
+    width: 100%;
+    height: 100%;
+}
+
+/*hasta aca*/
+
+
+
+/* SANTIAGO */
+
+section#santiago{
+    margin: 3%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+
+
+#fotosSan{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin: 3%;
+   
+}
+
+#fotoSan1{
+    width: 80%;
+    height: 80%;
+
+}
+
+#fotoSan1:hover{
+    width: 100%;
+    height: 100%;
+}
+
+
+#fotoSan2{
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+}
+
+#fotoSan2:hover{
+    width: 100%;
+    height: 100%;
+}
+
+#fotoSan3{
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#fotoSan3:hover{
+    width: 100%;
+    height: 100%;
+}
+
+
+}
+
+/* para tabelt media queries HASTA ACA*/
+
+
+
+
+
+
+
+
+
+
+
+/* medias keryes*/
+
+@media only screen and (max-width: 720px) 
+{
+    h1{
+    font-size: 42px;
+    letter-spacing: 3px ;}
+
+    #logo{
+        width: 80px;
+        height: 55px;
+    }
+
+    header {
+        grid-template-columns: 70% 20%;
+    }
+
+    body{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "presentacion presentacion presentacion"
+    "monumental monumental monumental"
+    "bombonera bombonera bombonera"
+    "santiago santiago santiago"
+    "footer footer footer";
+
+    grid-template-columns: 100% ;
+    }
+
+
+/* todo nav*/
+
+nav{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 0;
+    padding-bottom: 2%;
+    position:sticky;
+    top: 0;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+
+
+#contenedorNav{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-end;
+    justify-content: space-around;
+ 
+}
+
+.botonesNav{
+    width: 13vh;
+    height: 5vh;
+    font-size: 15px;
+    margin-top: 10%;
+}
+
+.divFlechasNav{
+    display: none;
+
+}
+
+#agradecimiento{
+ display: none;}
+
+/* todo nav HASTA ACA*/
+
+
+/*seccion presentacion*/
+
+section#presentacion{
+    display: grid;
+    grid-template-areas: 
+    "estadiosArg estadiosArg  "
+    "listaEstadios banderaArg";
+    margin: 5%;
+    border: 3px solid gray;
+    grid-template-columns: 1fr  1fr;
+    background-color: rgb(65, 62, 62)  ;
+    margin-top: 9%;
+    margin-bottom: 2%;
+
+}
+
+
+
+div#estadiosArg{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 30px;
+    letter-spacing: 15px;
+    text-align:center;
+}
+
+div#listaEstadios{
+    grid-area: listaEstadios;
+    text-align:center ;
+    border-top: 3px solid gray;
+
+}
+
+div#listaEstadios ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+div#listaEstadios ul li{
+    list-style: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 10px;
+    color: white;
+    margin-top: 10%;
+    margin-right: 20%;
+}
+
+#banderaArg{
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/200px-Flag_of_Argentina.svg.png);
+
+        background-position: center;
+        border-top:3px solid gray ;
+        border-left: 3px solid gray ;
+}
+
+/*seccion presentacion hasta aca*/
+
+
+/*titulos y sub */
+.subtitulosEstadios{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-style: inherit;
+    text-transform: uppercase;
+    color: rgb(60, 175, 241);
+
+    margin-top: 2%;
+    margin-bottom: 1%;
+
+
+}
+
+.parrafosEstadios{
+    font-family: 'Prompt', sans-serif;
+    margin: 0.5% 1% 0.1% 2%;
+    font-size: 15px;
+    color: white;
+}
+
+/*titulos y sub hasta aca*/
+
+
+/* monumental*/
+section#monumental{
+    grid-area: monumental;
+    margin: 3%;
+    border-radius: 2%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+
+}
+
+section#monumental:hover{
+    border: 4px solid rgb(60, 175, 241);
+}
+
+
+
+#fotosMonu{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin: 3%;
+    
+}
+
+#fotoMon1{
+    width: 80%;
+    height: 80%;
+
+
+}
+
+#fotoMon1:hover {
+    width: 100%;
+    height: 100%;
+}
+
+#fotoMon2{
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+}
+
+#fotoMon2:hover {
+    width: 100%;
+    height: 100%;
+}
+
+
+#fotoMon3{
+
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    
+}
+
+#fotoMon3:hover {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* monumental hasta aca*/
+
+
+
+/* BOMBONERA*/
+
+section#bombonera{
+    margin: 3%;
+    margin-top: 7%;
+    margin-bottom: 7%;  
+}
+
+
+#fotosBomb{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin: 3%;
+
+}
+
+#fotoBomb1{
+    width: 80%;
+    height: 80%;
+
+}
+
+#fotoBomb1:hover{
+    width: 100%;
+    height: 100%;
+}
+
+#fotoBomb2{
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    
+}
+
+#fotoBomb2:hover{
+    width: 100%;
+    height: 100%;
+}
+
+#fotoBomb3{
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    
+}
+
+#fotoBomb3:hover{
+    width: 100%;
+    height: 100%;
+}
+
+/*hasta aca*/
+
+
+
+/* SANTIAGO */
+
+section#santiago{
+    margin: 3%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+
+
+#fotosSan{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    margin: 3%;
+   
+}
+
+#fotoSan1{
+    width: 80%;
+    height: 80%;
+
+}
+
+#fotoSan1:hover{
+    width: 100%;
+    height: 100%;
+}
+
+
+#fotoSan2{
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+}
+
+#fotoSan2:hover{
+    width: 100%;
+    height: 100%;
+}
+
+#fotoSan3{
+    width: 80%;
+    height: 80%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+#fotoSan3:hover{
+    width: 100%;
+    height: 100%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,327 @@
+* {
+    Margin:0;
+    padding:0;
+ }
+
+/* todo header*/
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 109px;
+    font-family: 'Otomanopee One', sans-serif;
+    letter-spacing: 15px;}
+
+header {
+        margin: 2% 0  0 0 ;
+        text-align: center;
+        background-color:gray;  
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center
+    }
+
+#logo{
+        border-radius: 20%;
+        border: 2px outset white;
+        margin: 0 0 0 1%;}
+    
+
+/*body*/
+
+body{
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav presentacion presentacion"
+    "nav camp camp"
+    "nav berna berna"
+    "nav wanda wanda"
+    "footer footer footer";
+
+    grid-template-columns: 9% 91% ;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    margin-top: 10%;
+    margin-left: 3%;
+    grid-area: nav;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    
+}
+
+.textoNav{
+    background-color: rgb(233, 54, 0);
+    outline: none;
+    text-decoration: none;
+}
+
+.textoNav:link{
+    color: blue;
+}
+
+.textoNav:visited{
+    color: red;
+}
+
+
+nav div{
+    position:sticky;
+    top: 0;
+}
+
+#agradecimiento{
+    background-color: rgb(4, 158, 25);
+}
+
+section#presentacion{
+    grid-area: presentacion;
+    display: grid;
+    grid-template-areas: 
+    "estadiosArg banderaArg"
+    "listaEstadios banderaArg";
+    margin: 1%;
+    border: 3px solid gray;
+    grid-template-columns: 1fr  1fr;
+    background-color: rgb(65, 62, 62)  ;
+    margin-top: 3%;
+    margin-bottom: 2%;
+
+}
+
+section#camp{
+    grid-area: camp;
+    margin: 1%;
+    border: 2px solid gray;
+    border-radius: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+/* fotos camp nou*/
+
+#fotosCamp{
+    display: inline-block;
+    text-align: center;
+    margin: 1.5%;
+
+    
+}
+
+#fotoCamp1{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+
+}
+
+#fotoCamp2{
+    width: 25.3%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+}
+
+#fotoCamp3{
+    width: 30%;
+    height:30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    
+}
+
+/* hasta aca*/
+
+
+section#berna{
+    grid-area: bombonera;
+    margin: 1%;
+    border: 2px solid gray;
+    border-radius: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/*fotos bermabeu*/
+
+#fotosBerna{
+    display: inline-block;
+    text-align: center;
+    margin: 1.5%;
+
+}
+
+#fotoBerna1{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+
+}
+
+#fotoBerna2{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    
+}
+
+#fotoBerna3{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    
+}
+
+/*hasta aca*/
+
+
+
+section#wanda{
+    grid-area: santiago;
+    margin: 1%;
+    border: 2px solid gray;
+    border-radius: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*fotos santiago*/
+
+#fotosWanda{
+    display: inline-block;
+    text-align: center;
+    margin: 1.5%;
+   
+}
+
+#fotoWanda1{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+
+}
+
+#fotoWanda2{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+}
+
+#fotoWanda3{
+    width: 30%;
+    height: 30%;
+    border: 2px solid gray;
+    border-radius: 10%;
+    
+}
+
+
+/*hasta aca*/
+
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: gray;
+}
+
+/* hasta aca grid body*/
+
+/*nombres areas PRESENTACION*/
+
+div#banderaEsp{
+    grid-area: banderaArg;
+}
+
+div#estadiosEsp{
+    grid-area: estadiosArg;
+    font-family: 'Anton', sans-serif;
+    font-size: 98px;
+    letter-spacing: 15px;
+    text-align: center;
+    color: white
+}
+
+div#listaEstadios{
+    grid-area: listaEstadios;
+    text-align: center ;
+    border-top: 3px solid gray;
+}
+
+div#listaEstadios ul li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    margin: 5% 2% 1% 2%;
+    color: white;
+    
+
+    
+}
+
+div#listaEstadios ul li:hover {
+    background-color: rgb(233, 54, 0);
+}
+
+/* hast aca*/
+
+
+#banderaEsp{
+    background-image: url(esp.png);
+    background-position:center;
+    background-size: 609px;
+
+}
+
+.subtitulosEstadios{
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-style: inherit;
+    text-transform: uppercase;
+    color: rgb(233, 54, 0);
+
+}
+
+.parrafosEstadios{
+    font-family: 'Prompt', sans-serif;
+    margin: 0.5% 0.5% 0.1% 1%;
+    font-size: 25px;
+    color: white;
+}
+
+/* menu desplegable en nav*/
+
+nav div ul{
+    position: absolute;
+   display: none;
+
+}
+
+nav div ul li{
+    display: block;
+}
+
+nav div:hover ul{
+    display:block;
+    background-color: rgb(184, 50, 9);
+    width: 100%;
+}
+
+/* menu desplegable en nav HASTA ACA*/
