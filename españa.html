@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilosEspaña.css">
-    <title>España-Stadium</title>
+    <title>España-stadium</title>
 
     <!-- estilos letras css-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,68 +23,91 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
 
+
+<!-- boostrap-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- link css-->
+
+<link rel="stylesheet" href="estilosEspaña.css">
+
+<!-- etiquetas de animacion-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- etiquetas de iconos-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
+
 
 <body>
 
-    <header id="tituloEsp">
-        <h1> STADIUM </h1>
-        <img id="logo" src="logo stadiumM.jpg" alt="logo stadium" width="300" height="200">
+    <header id="tituloItalia" >
+        <h1 class="animate__animated animate__fadeInDown"> STADIUM </h1>
+        <div id="contenedorLogo"><img id="logo" src="logo stadiumM.jpg" alt="logo stadium" width="350" height="190" class="animate__animated animate__fadeInDown"></div>
 
     </header>
 
 
-    <nav>
 
-        <div>
-            <a href="#tituloEsp"><p class="textoNav">INICIO</p></a>
+    <nav class="animate__animated animate__fadeInLeft">
 
-        <br>
-        <a href="index.html"><p class="textoNav">HOME</p></a>
+    <div id="contenedorNav">
+               <a href="index.html"><button class="btn btn-danger botonesNav" type="button">HOME</button></a>
 
-        <br>
+                <a href="infoStadium.html"><button class="btn btn-danger botonesNav" type="button">STADIUM</button></a>     
+               
+               <a href="italia.html"><button class="btn btn-outline-success botonesNav" type="button">ITALIA</button></a>
 
-        <p class="textoNav">OTROS PAISES</p>
+               <a href="argentina.html"><button class="btn btn-outline-primary botonesNav" type="button">ARGENTINA</button></a>
 
-            <ul>
-                <a href="argentina.html"><li>Argentina</li></a>
-                <a href="italia.html"><li>Italia</li></a>
-            </ul>
+               <!--iconos-botones de arriba y abajo -->
 
-        <br><br> <br>
+               <div class="divFlechasNav"> <a href="#tituloItalia"><i class="fas fa-angle-up fa-5x"></i></a> </div> 
+               <div class="divFlechasNav"><a href="#footer"> <i class="fas fa-angle-down fa-5x"></i></a></div> 
 
-        <p id="agradecimiento"> <strong>Gracias por visitar Stadium</p>
 
-         </div>
+
+                <p id="agradecimiento" > <strong>Gracias por visitar Stadium</p>
+ </div>
+
 
     </nav>
 
-    <section  id="presentacion">   
+   
+    <section  class="animate__animated animate__headShake" id="presentacion">   
 
-        <div id="banderaEsp">
-         </div>
 
-        <div id="estadiosEsp" >
-            <p>Estadios de España</p>
+        <div id="banderaItalia">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png" class="img-fluid" alt="...">
+
+        </div>
+
+        <div id="estadiosItalia" >
+            <p >Estadios de España</p>
         </div>
 
         <div id="listaEstadios" >
             <ul>
-                <a href="#camp"><li>Estadio Camp Nou</li></a>
-                <a href="#berna"><li>Estadio Santiago Bernabéu</li></a>
-                <a href="#wanda"><li>Estadio Wanda Metropolitano</li></a>
+                <a href="#monumental"><li>Estadio Camp Nou</li></a>
+                <a href="#bombonera"><li>Estadio Santiago Bernabéu</li></a>
+                <a href="#santiago"><li>Estadio Wanda Metropolitano</li></a>
             </ul>
         </div>
 
     </section>
 
-    <section id="camp">
+    <section id="monumental">
         <p class="subtitulosEstadios">Estadio Camp Nou</p>
-        <div id="fotosCamp">
-        <img src="camp1.jpg" alt="" id="fotoCamp1">
-        <img src="camp2.jpeg" alt="" id="fotoCamp2">
-        <img src="camp3.png" alt="" id="fotoCamp3">
-        </div>
+        
+        <div id="fotosMonu">
+        <img src="camp1.jpg" alt="" id="fotoMon1">
+        <img src="https://cdn.getyourguide.com/img/tour/5cd031d5654c4.jpeg/146.jpg" alt="" id="fotoMon2">
+        <img src="https://descargarfondos.com/wp-content/uploads/Estadio-barcelona.jpg" alt="" id="fotoMon3">
+        </div> 
 
         <p class="parrafosEstadios">El Camp Nou es un recinto deportivo propiedad del Fútbol Club Barcelona, ubicado en el distrito de Les Corts de la ciudad de Barcelona, España. Se inauguró el 24 de septiembre de 1957 y su aforo actualmente es de 99 354 espectadores, siendo el estadio con mayor capacidad de Europa y el cuarto a nivel mundial.</p> <br>
 
@@ -96,13 +118,13 @@
 
     </section>
 
-    <section id="berna">
+    <section id="bombonera">
         <p class="subtitulosEstadios">Estadio Santiago Bernabéu</p>
 
-        <div id="fotosBerna">
-            <img src="berna1.jpg" alt="" id="fotoBerna1">
-            <img src="berna2.jpg" alt="" id="fotoBerna1">
-            <img src="berna3.jpg" alt="" id="fotoBerna2">
+        <div id="fotosBomb">
+            <img src="berna1.jpg" alt="" id="fotoBomb1">
+            <img src="berna2.jpg" alt="" id="fotoBomb1">
+            <img src="berna3.jpg" alt="" id="fotoBomb2">
             </div>
 
         <p class="parrafosEstadios">
@@ -116,13 +138,13 @@
        <p class="parrafosEstadios">En 1982, España fue anfitriona de la Copa del Mundo y el Santiago Bernabéu fue sede de cuatro encuentros. Acogió tres partidos de la segunda fase del campeonato, correspondientes al grupo B, disputándose el resto de encuentros de esta fase en el Camp Nou (grupo A), Sarriá (grupo C) y Calderón (grupo D). Por último, acogió la final disputada entre Italia y Alemania Federal, en la que los italianos se alzaron con su tercer título.</p> 
     </section>
 
-    <section id="wanda">
+    <section id="santiago">
         <p class="subtitulosEstadios">Estadio Wanda Metropolitano</p>
 
-        <div id="fotosWanda">
-            <img src="wanda1.jpg" alt="" id="fotoWanda2">
-            <img src="wanda2.jpg" alt="" id="fotoWanda1">
-            <img src="wanda3.jpg" alt="" id="fotoWanda3">
+        <div id="fotosSan">
+            <img src="wanda1.jpg" alt="" id="fotoSan1">
+            <img src="wanda2.jpg" alt="" id="fotoSan2">
+            <img src="wanda3.jpg" alt="" id="fotoSan3">
         </div>
 
         <p class="parrafosEstadios">
@@ -138,14 +160,24 @@
         <p class="parrafosEstadios">
             Originariamente, este recinto deportivo fue inaugurado el 6 de septiembre de 1994 como estadio de atletismo, impulsado por la Comunidad de Madrid, siendo conocido popularmente como «La Peineta», debido a la apariencia de su tribuna principal. En 2002, su titularidad fue transferida al Ayuntamiento de Madrid,12​ formando parte de las candidaturas olímpicas de 2012, 2016 y 2020, de la ciudad de Madrid. Finalmente, el consistorio suscribió un convenio patrimonial con el Club Atlético de Madrid en 2008, por el cual se traspasaba la propiedad del recinto al club rojiblanco, tras el proyecto de reforma.
 
-        </p><br>
+        </p>
 
     </section>
 
 
-    <footer>
-        <p class="parrafosEstadios"  > <strong>DERECHOS RESERVADOS DE STADIUM </strong></p>
+    <footer id="footer">
+        <p id="derechosFooter" class=" textFooter"> DERECHOS RESERVADOS DE STADIUM</p>
+        <p id="firma" class="textFooter">Sitio Creado por Julián Filgueira</p>
+        <a id="linkIg" href="https://www.instagram.com/juli_filgueira/"><i class="fab fa-instagram-square  iconosFooter textFooter"></i></a>
+        <a id="linkLinkedin" href="https://www.linkedin.com/in/julian-filgueira-74a525199/"><i class="fab fa-linkedin"></i></a>
+    
     </footer>
+
+
+
+<!--boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     
 </body>
 </html>
