@@ -4,96 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+
     <title>Stadium</title>
 
-    <!-- estilos letras css-->
+<!-- estilos letras css-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Permanent+Marker&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
 
+<!-- boostrap-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- css-->
+<link rel="stylesheet" href="estilos.css">
+
+<!-- etiquetas de animacion-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- etiquetas de iconos-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 
 <body class="fondo">
     
     <header>
-    <h1> STADIUM </h1>
-    <img id="logo" src="logo stadiumM.jpg" alt="logo stadium" width="300" height="200">
+    <h1 class="animate__animated animate__fadeInDown"> STADIUM </h1>
+    <div id="contenedorLogo"><img id="logo" src="logo stadiumM.jpg" alt="logo stadium" width="350" height="190" class="animate__animated animate__fadeInDown"></div>
     </header>
 
-<nav>
-        <ul>
-        <li> <a href="#queestadium">  ¿Qué es Stadium?</li></a> 
-        <li> <a href="#contacto"> Contacto</li></a>
-        <li> <a href="#sercolaborador"> ¿Cómo ser colaborador?</li></a>
-    </ul>
-</nav>
-<section>
-    <article id="banderas">
-   <a class="banderasSombras" href="argentina.html">  <img src="arg.jpg" alt="bandera argentina" width="400" height="300">  </a>
+<!--Nav-->
 
-   <a class="banderasSombras" href="españa.html"> <img src="esp.png" alt="bandera española" width="400" height="300"> </a>
+<ul id="nav" class="nav nav-pills animate__animated animate__fadeInLeft">
+    <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#sobreEstadium">Sobre Stadium</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#serColaborador">Ser Colaborador</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Paises</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="argentina.html">Argentina</a></li>
+          <li><a class="dropdown-item" href="españa.html">España</a></li>
+          <li><a class="dropdown-item" href="italia.html">Italia</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </li>
+  </ul>
 
-   <a class="banderasSombras" href="italia.html"> <img src="italia.png" alt="bandera italiana" width="400" height="300"> </a>
+  <!--Nav   hasta aca-->
 
+
+    <!--Carrusel-->
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://1.bp.blogspot.com/-nkTiH2afgHk/WSDwj84zazI/AAAAAAAAExc/IhB3P0PiVaE8GOL3Lj1DL9XY8Ju50ZCEACLcB/s1600/Illuminated_Allianz_Arena4.JPG" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cnnespanol.cnn.com/wp-content/uploads/2020/12/201221171153-ahmad-bin-ali-stadium-qatar-2022-tease-full-169.jpg?quality=100&strip=info" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.ecestaticos.com/image/clipping/1ffee59d08832cb2c83a06df521b7c0f/quien-es-el-millonario-que-esta-como-loco-por-comprar-el-estadio-de-wembley.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+   <!--Carrusel hasta aca-->
+
+
+
+    <article id="sobreEstadium" class="separacionPartes">
+        <h2 class="subtitulos">Sobre Stadium</h2>
+        <p class="parrafosGenerales"> Stadium es un sitio web dedicado a mostrar los mejores estadios de fútbol del mundo. Inicialmente nos centraremos en estadios de Argentina, Italia y España. Posteriormente con la ayuda de los aficionado iremos agregando estadios de otros países del mundo</p>
     </article>
-    <article id="queestadium">
-        <h2 class="subtitulos">¿Qué es Stadium?</h2>
-        <p class="ParrafosGenerales"> Stadium es un sitio web dedicado a mostrar los mejores estadios de fútbol del mundo. Inicialmente nos centraremos en estadios de Argentina, Italia y España. Posteriormente con la ayuda de los aficionado iremos agregando estadios de otros países del mundo</p>
-    </article>
 
-    <article id="sercolaborador">
-        <p class="subtitulos"> ¿Queres ser colaborador de Stadium?</p>
-        <p class="ParrafosGenerales">Los colaboradores de Stadium se encargan de recomendar estadios de distintas partes del mundo, hacer descripciones de los mismos, buscar fotogafíos y videos, entre otras cosa. ¡No te pierdas esta oportunidad!</p>
-        <p class="ParrafosGenerales">Para poder ser colaborador de Stadium tienes que rellenar el <a href="#contacto">formulario de contacto. </a></p>
+    <article id="serColaborador" class="separacionPartes">
+        <p class="subtitulos"> Colaboradores de Stadium</p>
+        <p class="parrafosGenerales">Los colaboradores de Stadium se encargan de recomendar estadios de distintas partes del mundo, hacer descripciones de los mismos, buscar fotogafíos y videos, entre otras cosa. ¡No te pierdas esta oportunidad!</p>
+        <p class="parrafosGenerales">Para poder ser colaborador de Stadium tienes que rellenar el <a href="#contacto">formulario de contacto. </a></p>
 
     </article >
     
-    <article id="contacto">
-        <p class="subtitulos">Contacto</p>
-        <form action="">
-            <fieldset id="FormularioDeContacto">
-                <legend> Formulario de Contacto:</legend>
-                <label for="Nombre"> Nombre:</label><br>
-                <input type="text" name="Nombre" placeholder="ej: Juan"> <br><br>
+    
+     <!--formulario de contacto-->
 
-                <label for="Apellido:"> Apellido:</label><br>
-                <input type="text" name="Apellido" placeholder="ej: Perez"> <br><br>
+    <article>
 
-                <label for="email"> E-mail:</label><br>
-                <input type="email" name="email" placeholder="ej: JuanPerez@hotmail.com"> <br><br>
+    <p class="subtitulos">Contacto</p>
 
-                <label for="valoracion"> ¿Qué te pareció Stadium?</label>
-                <select name="valoracion" id="valoracion">
-                    <option value="m">Malo</option>
-                    <option value="b">Bueno</option>
-                    <option value="e">Excelente</option>
-                </select><br><br>
+  <div id="contacto">
+    
+      <form action=""></form>
+      <fieldset id="FormularioDeContacto">
+      <div class="form-floating componenteFormulario">
+        <input type="text" class="form-control" id="floatingName" placeholder="Nombre">
+        <label for="floatingName">Nombre</label>
+      </div>
+      <div class="form-floating componenteFormulario">
+        <input type="text" class="form-control" id="floatingApellido" placeholder="Apellido">
+        <label for="floatingApellido">Apellido</label>
+      </div>
+      <div class="form-floating mb-3 componenteFormulario">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email</label>
+      </div>
+      <select class="form-select componenteFormulario" aria-label="Default select example">
+        <option selected>¿Cómo calificarías a Stadium</option>
+        <option value="Malo">Malo</option>
+        <option value="Bueno">Bueno</option>
+        <option value="Excelente">Excelente</option>
+      </select>
+      <div class="form-floating componenteFormulario">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Comentarios</label>
+      </div>
+      <div class="form-check form-switch componenteFormulario">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label id="newsletter" class="form-check-label" for="flexSwitchCheckDefault">Recibir Newsletter</label>
+      </div>
 
-                <label for="newsletter"> ¿Desea recibir newsletter? </label> <input type="checkbox" name="newsletter" id="newsletter">
-                 <br><br>
+      <input type="submit" value="Enviar formulario" class="componenteFormulario botonesFormulario" id="botonEnviar">
+      <input type="reset" value="Borrar" class="componenteFormulario botonesFormulario" id="botonBorrar">
+    </fieldset>
+    </form>
 
-                 <label for="comentarios"> Comentarios</label><br>
-                 <textarea rows="4" cols="15"> </textarea> 
-                 <br> <br>
 
-                <input type="submit" value="Enviar formulario">
-                <input type="reset" value="Borrar">
-            </fieldset>
-        </form>
+    </div>
+    </article>
 
+       <!--formulario de contacto hasta aca-->
     
 
-    </article>
+
 
 </section>
 
 <footer>
-    <p class="ParrafosGenerales"> DERECHOS RESERVADOS DE STADIUM</p>
+    <strong><p id="derechosFooter" class="parrafosGenerales textFooter"> DERECHOS RESERVADOS DE STADIUM</p>
+    <p id="firma" class="textFooter">Sitio Creado por Julián Filgueira</p></strong>
+    <a id="linkIg" href="https://www.instagram.com/juli_filgueira/"><i class="fab fa-instagram-square  iconosFooter textFooter"></i></a>
+    <a id="linkLinkedin" href="https://www.linkedin.com/in/julian-filgueira-74a525199/"><i class="fab fa-linkedin"></i></a>
 
 </footer>
 

@@ -5,100 +5,350 @@
  
 
 .fondo{
-    background-color: #011817;
+    background-image: radial-gradient(circle, #070f1e, #0e111c, #12121a, #141418, #161616);
+    
 }
+    
 
-h1 {
-    color: white;
-    font-size: 109px;
-    font-family: 'Otomanopee One', sans-serif;
-    letter-spacing: 15px ;
-
-}
-
-ul {
-    list-style: none;
-    background-color:rgb(1, 243, 114);
-    margin: 0 0 3% 0;
-    max-height: 60px;
-}
-
-body {
-    color: white;
-    font-family: 'Vollkorn', serif;
-    font-size: 23px;
-
-}
-
-.subtitulos {
-    color: white;
-    font-family: 'Vollkorn', serif;
-    font-size: 30px;
-    margin: 1% 0 1% 1%; 
-    background-color: green;
-    font-weight:bold ;
-    width:fit-content;
-}
+/* todo headear*/
 
 header {
     margin: 2% 0  0 0 ;
     text-align: center;
-    background-color:gray;  
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;  
+    display:grid;
+    grid-template-areas:
+    "titulo logo";
+
+    grid-template-columns: 60% 30%;
+}
+
+h1{
+    color: white;
+    font-size: 800%;
+    font-family: 'Otomanopee One', sans-serif;
+    letter-spacing: 15px ;
+    grid-area: titulo;
+    padding-right: 1%;
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: center
+    justify-content:center;
+    justify-content: flex-end;
+    align-items: flex-end;
 
 }
+
 
 
 #logo{
-border-radius: 20%;
-border: 2px outset white;
-margin: 0 0 0 1%;
+    border-radius: 20%;
+       border: 2px outset white;
+       margin: 0 0 0 1%;
+  
 }
 
-ul li {
-    display: inline-block;
-    border: 2px solid rgb(13, 191, 245);
-    border-radius: 5%;
-    margin: 1% 0 4% 1%;
-    color: white;
-    font-weight:bold 
+#contenedorLogo{
+   grid-area: logo;
+   display: flex;
+   justify-content:center;
+   justify-content: flex-start;
+   align-items: flex-end;
+   padding: 1% 0;
 }
 
-#banderas{
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2%;
-}
+/* todo headear hasta aca*/
 
-/* hay q poner siempre sticky y top 0 xq sino nose peg... top 0 sirve para decir en donde queres q se pegue*/
-nav{
+
+/*nav*/
+#nav{
 position:sticky;
 top: 0;
-text-align: center;
+margin-top: 1.5%;
+margin-bottom: 3%;
+font-size: 23px;
+z-index: 1;
+background-image: radial-gradient(circle, #070f1e, #0e111c, #12121a, #141418, #161616);
+padding-bottom: 1%;
+
 }
 
-.banderasSombras:hover{
-    box-shadow: 5px 5px 5px 5px greenyellow;
+
+/*nav hasta aca*/
+
+/*carrusel*/
+
+#carouselExampleControls{
+    z-index: 0;
+}
+
+
+/*carrusel hasta aca*/
+
+
+/*generales*/
+
+.subtitulos {
+    color: white;
+    font-family: 'Vollkorn', serif;
+    font-size: 35px;
+    margin: 1% 0 1% 1%; 
+    background-color: #0d6efd;
+    font-weight:bold ;
+    width:fit-content;
+}
+
+.parrafosGenerales{
+    font-family:'Prompt', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-left: 0.5%;
+    margin-right: 1%;
+}
+
+.separacionPartes{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 1%;
+}
+
+/*generales hasta aca*/
+
+
+
+/*formulario*/ 
+#contacto{
+    width: 30%;
+    margin-left: 1%;
+}
+
+.componenteFormulario{
+    margin-top: 2%;
+    margin-bottom: 2%;
+
 
 }
 
-.ParrafosGenerales{
-    margin: 0.5%;
+#newsletter{
+    font-size: 18px;
+    color: white;
 }
 
-#FormularioDeContacto{
-    margin: 0 5% 0.5% 0.5%;
+.botonesFormulario{
+    font-size: 2vh;
+    border-radius: 5px;
+    color:white;
+    margin-right: 2%;
+}
+
+#botonBorrar{
+    background-color: rgb(185, 19, 19);
+}
+
+#botonEnviar{
+    background-color:rgb(6, 114, 6);
+}
+
+/*formulario hasta aca*/ 
+
+
+
+/* footer*/
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: gray;
+}
+
+
+
+
+.textFooter{
+    display: inline;
+}
+
+#firma{
+    color:black;
+}
+
+#linkIg {
+    color:  black;
+}
+
+#linkIg:hover {
+   color: rgb(78, 2, 78);
     
 }
 
-footer{
-    background-color: grey;
-    text-align: center;
+#linkIg:a {
+
+   color: black;
+}
+
+#linkLinkedin{
+    color:  black;
+}
+
+#linkLinkedin:hover {
+    color: rgb(2, 55, 139);
+     
+ }
+
+ /* footer hast aca*/
+
+
+
+
+
+
+
+
+
+
+ /* media queries*/
+
+/*keryes para pant grandes*/
+
+@media only screen and (max-width:1650px ) 
+{
+  
+
 }
 
 
 
+
+/*keryes para pant grandes HASTA ACA*/
+
+
+/*keryes para tablet*/
+
+
+@media only screen and (max-width:1400px ) 
+{
+    h1{
+        font-size: 100px;
+        letter-spacing: 5px ;}
+    
+        #logo{
+            width: 250px;
+            height: 140px;
+        }
+    
+
+
+}
+
+
+
+/*keryes para smartphones*/
+
+@media only screen and (max-width: 780px) 
+{
+    h1{
+    font-size: 38px;
+    letter-spacing: 3px ;}
+
+    #logo{
+        width: 80px;
+        height: 55px;
+    }
+
+
+    #nav{
+        font-size: 15px;
+        margin-top: 5%;
+
+        
+        }
+
+        /*generales*/
+
+.subtitulos {
+
+    font-size: 25px;
+    margin: 3% 0 1% 1%; 
+   
+}
+
+.parrafosGenerales{
+    font-size: 20px;
+    margin-left: 0.5%;
+    margin-right: 1%;
+}
+
+.separacionPartes{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-right: 1%;
+}
+
+/*generales hasta aca*/
+        
+   
+    /* footer*/
+
+
+footer{
+    margin-top: 5%;
+}
+
+#derechosFooter{
+    font-family:'Prompt', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-left: 0.5%;
+    margin-right: 1%;
+}
+
+
+
+.textFooter{
+    display: inline-block;
+}
+
+#firma{
+    font-size: 10px;
+
+}
+
+
+ /* footer hast aca*/
+
+
+
+/*formulario*/ 
+#contacto{
+    width: 80%;
+    margin-left: 1%;
+    font-size: 15px;
+}
+
+.componenteFormulario{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+}
+
+#newsletter{
+    font-size: 15px;
+}
+
+.botonesFormulario{
+    font-size: 3vh;
+
+}
+
+#botonBorrar{
+    background-color: rgb(185, 19, 19);
+}
+
+#botonEnviar{
+    background-color:rgb(6, 114, 6);
+}
+
+/*formulario hasta aca*/ 
+
+}

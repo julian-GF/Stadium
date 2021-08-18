@@ -42,7 +42,8 @@ header {
             justify-content:center;
             justify-content: flex-start;
             align-items: flex-end; 
-        padding: 1% 0;   }
+        padding: 1% 0; 
+      }
     
 
 /*body*/
@@ -119,6 +120,7 @@ nav{
 
 }
 
+
 @keyframes agradecer {
     0% { color:rgb(157, 255, 0);
     border: 5px rgb(157, 255, 0);
@@ -140,13 +142,13 @@ nav{
 
 /* todo nav HASTA ACA*/
 
-
+              /*seccion presentacion*/
 section#presentacion{
     grid-area: presentacion;
     display: grid;
     grid-template-areas: 
-    "estadiosArg banderaArg"
-    "listaEstadios banderaArg";
+    "estadiosItalia banderaItalia"
+    "listaEstadios banderaItalia";
     margin: 5%;
     border: 3px solid gray;
     grid-template-columns: 1fr  1fr;
@@ -155,6 +157,60 @@ section#presentacion{
     margin-bottom: 2%;
 
 }
+
+#banderaItalia{
+    grid-area: banderaItalia;
+}
+
+      /*nombres areas PRESENTACION*/
+
+
+
+div#estadiosItalia{
+    grid-area: estadiosItalia;
+    font-family: 'Anton', sans-serif;
+    font-size: 98px;
+    letter-spacing: 15px;
+    text-align: center;
+    color:  rgb(0, 141, 66);
+    animation-name: sub;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes sub {
+    0% {  color: rgb(0, 141, 66)}
+    50% { color:  rgb(248, 248, 248);}
+    70% { color:  rgb(75, 4, 10);}
+}
+
+div#listaEstadios{
+    grid-area: listaEstadios;
+    text-align: center ;
+    border-top: 3px solid gray;
+}
+
+div#listaEstadios ul li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    margin: 5% 2% 1% 2%;
+    color: white;
+    
+
+    
+}
+
+#listaEstadios ul li:hover {
+    background-color: rgb(12, 144, 45);
+}
+
+        /* hast aca*/
+
+        /*seccion presentacion hasta aca*/
 
 section#monumental{
     grid-area: monumental;
@@ -170,7 +226,7 @@ section#monumental{
 }
 
 section#monumental:hover{
-    border: 4px solid rgb(60, 175, 241);
+    border: 4px solid rgb(12, 144, 45);
 }
 
 /* fotos monumental*/
@@ -245,7 +301,7 @@ section#bombonera{
 }
 
 section#bombonera:hover{
-border: 4px solid rgb(60, 175, 241);
+border: 4px solid rgb(12, 144, 45);
 }
 /*fotos bomb*/
 
@@ -317,7 +373,7 @@ section#santiago{
 }
 
 section#santiago:hover{
-    border: 4px solid rgb(60, 175, 241);
+    border: 4px solid rgb(12, 144, 45);
     }
 
 /*fotos santiago*/
@@ -433,61 +489,7 @@ footer {
 
 /* hasta aca grid body*/
 
-/*nombres areas PRESENTACION*/
 
-div#banderaArg{
-    grid-area: banderaArg;
-}
-
-div#estadiosArg{
-    grid-area: estadiosArg;
-    font-family: 'Anton', sans-serif;
-    font-size: 98px;
-    letter-spacing: 15px;
-    text-align: center;
-    color: white;
-    animation-name: sub;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in;
-    animation-duration: 5s;
-    animation-delay: 2s;
-}
-
-@keyframes sub {
-    0% {  color: white}
-    50% { color:  rgb(36, 164, 238);}
-}
-
-div#listaEstadios{
-    grid-area: listaEstadios;
-    text-align: center ;
-    border-top: 3px solid gray;
-}
-
-div#listaEstadios ul li{
-    list-style: none;
-    display: inline-block;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
-    margin: 5% 2% 1% 2%;
-    color: white;
-    
-
-    
-}
-
-div#listaEstadios ul li:hover {
-    background-color: rgb(11, 147, 226);
-}
-
-/* hast aca*/
-
-
-#banderaArg{
-    background-image: url(arg.jpg);
-    background-position: center;
-
-}
 
 .subtitulosEstadios{
     font-family: 'Anton', sans-serif;
@@ -496,7 +498,7 @@ div#listaEstadios ul li:hover {
     text-align: center;
     font-style: inherit;
     text-transform: uppercase;
-    color: rgb(60, 175, 241);
+    color: rgb(12, 144, 45);
     margin-top: 2%;
     margin-bottom: 1%;
 
@@ -517,7 +519,7 @@ div#listaEstadios ul li:hover {
     .botonesNav{
         width: 11vh;
         height: 7vh;
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 10%;
     }
 
@@ -528,13 +530,14 @@ div#listaEstadios ul li:hover {
 
 }
 
-#banderaArg{
-    background-image: url(https://cdn.pixabay.com/photo/2020/06/28/22/09/argentina-flag-5350831_960_720.jpg);    
-    background-position:center;
-    border-top:3px solid gray ;
-    border-left: 3px solid gray ;
-    background-repeat: no-repeat;
+#banderaItalia{
+    display: flex;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 1%;
+
 }
+
 
 }
 
@@ -617,7 +620,7 @@ nav{
 .botonesNav{
     width: 15vh;
     height: 5vh;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 10%;
 }
 
@@ -637,8 +640,8 @@ nav{
 section#presentacion{
     display: grid;
     grid-template-areas: 
-    "estadiosArg estadiosArg  "
-    "listaEstadios banderaArg";
+    "estadiosItalia estadiosItalia "
+    "listaEstadios banderaItalia";
     margin: 5%;
     border: 3px solid gray;
     grid-template-columns: 1fr  1fr;
@@ -651,7 +654,7 @@ section#presentacion{
 
 
 
-div#estadiosArg{
+div#estadiosItalia{
     font-family: 'Otomanopee One', sans-serif;
     font-size: 90px;
     letter-spacing: 15px;
@@ -675,19 +678,18 @@ div#listaEstadios ul{
 div#listaEstadios ul li{
     list-style: none;
     font-family: 'Varela Round', sans-serif;
-    font-size: 30px;
+    font-size: 23px;
     color: white;
     margin-top: 10%;
     margin-right: 20%;
 }
 
-#banderaArg{
-        background-image: url(http://i2.wp.com/www.diariocafayate.com/wp-content/uploads/2018/06/bandera-argentina.jpg?fit=476%2C297);
-
-        background-position:center;
+#banderaItalia{
+        display: flex;
+        align-items: center;
         border-top:3px solid gray ;
-        border-left: 3px solid gray ;
-        background-repeat: no-repeat;
+        padding-right: 3%;
+ 
 }
 
 /*seccion presentacion hasta aca*/
@@ -701,7 +703,6 @@ div#listaEstadios ul li{
     text-align: center;
     font-style: inherit;
     text-transform: uppercase;
-    color: rgb(60, 175, 241);
 
     margin-top: 2%;
     margin-bottom: 1%;
@@ -729,9 +730,7 @@ section#monumental{
 
 }
 
-section#monumental:hover{
-    border: 4px solid rgb(60, 175, 241);
-}
+
 
 
 
@@ -978,7 +977,7 @@ nav{
 .botonesNav{
     width: 13vh;
     height: 5vh;
-    font-size: 15px;
+    font-size: 11px;
     margin-top: 10%;
 }
 
@@ -998,8 +997,8 @@ nav{
 section#presentacion{
     display: grid;
     grid-template-areas: 
-    "estadiosArg estadiosArg  "
-    "listaEstadios banderaArg";
+    "estadiosItalia estadiosItalia  "
+    "listaEstadios banderaItalia";
     margin: 5%;
     border: 3px solid gray;
     grid-template-columns: 1fr  1fr;
@@ -1011,7 +1010,7 @@ section#presentacion{
 
 
 
-div#estadiosArg{
+div#estadiosItalia{
     font-family: 'Otomanopee One', sans-serif;
     font-size: 30px;
     letter-spacing: 15px;
@@ -1041,12 +1040,12 @@ div#listaEstadios ul li{
     margin-right: 20%;
 }
 
-#banderaArg{
-        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/200px-Flag_of_Argentina.svg.png);
-
-        background-position: center;
+#banderaItalia{
+        display: flex;
+        align-items: center;
         border-top:3px solid gray ;
-        border-left: 3px solid gray ;
+        padding-right: 3%;
+    
 }
 
 /*seccion presentacion hasta aca*/
@@ -1060,7 +1059,6 @@ div#listaEstadios ul li{
     text-align: center;
     font-style: inherit;
     text-transform: uppercase;
-    color: rgb(60, 175, 241);
 
     margin-top: 2%;
     margin-bottom: 1%;
@@ -1088,9 +1086,7 @@ section#monumental{
 
 }
 
-section#monumental:hover{
-    border: 4px solid rgb(60, 175, 241);
-}
+
 
 
 
@@ -1258,6 +1254,32 @@ section#santiago{
     width: 100%;
     height: 100%;
 }
+
+/* footer*/
+
+
+
+#derechosFooter{
+    font-family:'Prompt', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-left: 0.5%;
+    margin-right: 1%;
+}
+
+
+
+.textFooter{
+    display: inline-block;
+}
+
+#firma{
+    font-size: 10px;
+
+}
+
+
+ /* footer hast aca*/
 
 
 }

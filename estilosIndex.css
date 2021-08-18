@@ -102,20 +102,9 @@ section div img:hover{
     margin-top: 1%;
 }
 
-footer p{
-    font-family: 'Prompt', sans-serif;
-    margin: 0.5% 0.5% 0.1% 1%;
-    font-size: 25px;
-    color: white;
-    text-align: center;
 
-}
 
-footer{
-    margin-top: 3%;
-    margin-bottom: 0%;
-      background-color: gray;
-}
+
 
 #contenedorBanderas{
     display: flex;
@@ -124,7 +113,146 @@ footer{
     
 }
 
+/* footer*/
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: gray;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding-bottom: 0%;
+}
+
+#derechosFooter{
+    font-family:'Prompt', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-left: 0.5%;
+    margin-right: 1%;
+}
+
+
+
+.textFooter{
+    display: inline;
+}
+
+#firma{
+    color:black;
+}
+
+#linkIg {
+    color:  black;
+}
+
+#linkIg:hover {
+   color: rgb(78, 2, 78);
+    
+}
+
+#linkIg:a {
+
+   color: black;
+}
+
+#linkLinkedin{
+    color:  black;
+}
+
+#linkLinkedin:hover {
+    color: rgb(2, 55, 139);
+     
+ }
+
+ /* footer hast aca*/
+
+
 /* media queries*/
+
+/*keryes para pant grandes*/
+
+@media only screen and (max-width:1650px ) 
+{
+    section div img {
+        width: 400px;
+        height: 300px ;
+    }
+ 
+    #botonInfo{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-right: 10%;
+    
+    }
+
+    footer{
+        margin-top: 5%;
+
+    }
+
+}
+
+
+
+
+/*keryes para pant grandes HASTA ACA*/
+
+
+/*keryes para tablet*/
+
+
+@media only screen and (max-width:1400px ) 
+{
+    h1{
+        font-size: 100px;
+        letter-spacing: 5px ;}
+    
+        #logo{
+            width: 250px;
+            height: 140px;
+        }
+    
+        header {
+            grid-template-columns: 70% 20%;
+        }
+
+        #contenedorBanderas{
+            margin-top: 6%;
+            margin-bottom: 6%;
+            display: flex;     
+            flex-direction: column; 
+            justify-content: space-around;
+            }
+    
+        section div img {
+            width: 340px;
+            height: 230px ;
+        }
+
+        #banderaArg{
+            margin-left: 0;
+        }
+
+        #botonInfo{
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            margin-right: 16%;
+        
+        }
+
+        footer{
+            margin-top: 5%;
+
+        }
+
+}
+
+
+
+/*keryes para smartphones*/
 
 @media only screen and (max-width: 780px) 
 {
@@ -168,12 +296,45 @@ footer{
 
     .botonInfo-class{
         margin-top: 5%;
-        font-size: 10px;
+        font-size: 13px;
         text-transform: uppercase;
         color: white;
         width: 100%;
         height: 100%;
     
     }
+
+    #botonInfo{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-right: 7%;
+    
+    }
+
+    /* footer*/
+
+
+#derechosFooter{
+    font-family:'Prompt', sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-left: 0.5%;
+    margin-right: 1%;
+}
+
+
+
+.textFooter{
+    display: inline-block;
+}
+
+#firma{
+    font-size: 10px;
+
+}
+
+
+ /* footer hast aca*/
 
 }
